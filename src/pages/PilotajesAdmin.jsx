@@ -1,7 +1,7 @@
 import Navbar from "../components/organism/Navbar";
-import styles from "../../assets/components/styles/PilotajesAdmin.css"
+import styles from "../components/styles/PilotajesAdmin.css"
 import BodyPilotajesAdmin from "../components/organism/BodyPilotajesAdmin";
-import ListEnlaces from "../components/organism/ListaEnlaces";
+
 const PilotajesAdmin = () => {
     return (
         <>
@@ -12,5 +12,4 @@ const PilotajesAdmin = () => {
       
      );
 }
- 
 export default PilotajesAdmin;

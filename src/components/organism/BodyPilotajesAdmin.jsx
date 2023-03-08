@@ -1,9 +1,8 @@
 import styled from "styled-components";
 import GroupText from "../molecules/GroupText";
 import HerramientasAdmin from "../molecules/HerramientasAdmin";
-import ListEnlaces from "./ListaEnlaces";
-
-
+import ListEnlaces from "./ListEnlaces";
+import RangeGroup from "../molecules/RangeGroup";
 
 const BodyPilotajesAdmin = () => {
   return (
@@ -12,21 +11,20 @@ const BodyPilotajesAdmin = () => {
         <StyledWrapperContainerLeft>
          <HerramientasAdmin></HerramientasAdmin>
          <GroupText></GroupText>
-        <ListEnlaces></ListEnlaces>
+         <ListEnlaces></ListEnlaces>
         </StyledWrapperContainerLeft>
 
         <StyledWrapperContainerRight>
-          <h1>Holaa como estas</h1>
+        <RangeGroup></RangeGroup>
         </StyledWrapperContainerRight>
         </StyledWrapperContainer>
   );
 };
 
-
 const StyledWrapperContainerLeft = styled.div`
   width: 50%;
   height: 100%;
-  border: 2px solid blue;
+ 
   flex-direction:column;
   display: flex;
   justify-content: space-around;
@@ -36,7 +34,7 @@ const StyledWrapperContainerLeft = styled.div`
 const StyledWrapperContainerRight = styled.div`
   width: 50%;
   height: 100%;
-  border: 2px solid green;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -44,12 +42,13 @@ const StyledWrapperContainerRight = styled.div`
 const StyledWrapperContainer = styled.div`
   width: 100%;
   height: 100%;
-border: 5px solid red;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-top:10%
 `;
 
-export default BodyPilotajesAdmin;
 
+
+export default BodyPilotajesAdmin;
